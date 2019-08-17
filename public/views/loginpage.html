@@ -1,10 +1,10 @@
 <div class="vertical_center">
     <div class="container text-center">
         <div>
-            <img src="images/merchant_logo.svg" style="width: 60px;" alt="logo">
+            <img src="images/logo.png" style="width: 60px;" alt="logo">
         </div>
         <div >
-            <h1 style="font-size: 21px;">KhaaliJeb Merchant</h1>
+            <h1 style="font-size: 21px;">Voter Login</h1>
         </div>
         <div style="margin-top: 50px;">
             <form name="loginDashFrm" ng-submit="loginDashFrm.$valid && login(loginFrm.userId, loginFrm.password)" novalidate>
@@ -15,13 +15,13 @@
                                ng-model="loginFrm.userId"
                                required
                                ng-pattern="loginFormInputValidation"
-                               placeholder="Mobile Number/Email"
+                               placeholder="Voter ID"
                                class="loginInputCls"
                                ng-class="{formInputFieldNotValid: !loginVariablesObj.userIdEdit && loginDashFrm.$submitted && loginDashFrm.userId.$invalid}"
                                ng-focus="loginVariablesObj.userIdEdit = true"
                                ng-blur="loginVariablesObj.userIdEdit = false"
                                autofocus>
-                        <div ng-show="!loginVariablesObj.userIdEdit && loginDashFrm.$submitted && loginDashFrm.userId.$invalid" class="loginFormErrMsg">Enter a valid Mobile No. or Email ID</div>
+                        <div ng-show="!loginVariablesObj.userIdEdit && loginDashFrm.$submitted && loginDashFrm.userId.$invalid" class="loginFormErrMsg">Enter a valid Voter ID</div>
                     </div>
                 </div>
 
